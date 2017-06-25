@@ -5,6 +5,13 @@ class BlogsController < ApplicationController
                                   :destroy, 
                                   :toggle_status]
   layout "blog"
+  access all: [:show, :index], 
+          user: {except: [:destroy, 
+                          :new, 
+                          :create, 
+                          :update, 
+                          :edit]}, 
+          site_admin: :all
   
   # GET /blogs
   # GET /blogs.json
