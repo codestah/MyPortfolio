@@ -62,4 +62,5 @@ gem 'jquery-rails'
 
 gem 'my_portfolio_view_tool', git: 'https://github.com/codestah/my_portfolio_view_tool'
 
+gem 'petergate', '~> 1.6', '>= 1.6.3'
 
