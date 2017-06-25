@@ -60,4 +60,6 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
 
+gem 'my_portfolio_view_tool', git: 'https://github.com/codestah/my_portfolio_view_tool'
+
 
