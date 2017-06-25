@@ -31,7 +31,7 @@
 
               <%= yield %>
 
-              <%= render "shared/application_nav" %>
+              <%= render "shared/application_nav", location: 'bottom' %>
 
               <% if session[:source] %>
                 <p>Thanks for visiting me from <%= session[:source] %></p>
