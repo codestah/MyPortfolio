@@ -18,10 +18,9 @@ Bundler.require(*Rails.groups)
 
 module MyPortfolio
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
     config.action_controller.permit_all_parameters = true
-    # Don't generate system test files.
     config.generators.system_tests = nil
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
