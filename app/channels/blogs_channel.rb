@@ -10,3 +10,5 @@ class BlogsChannel < ApplicationCable::Channel
 		current_user.comments.create!(content: data['comment'], log_id: data['blog_id'])
 	end
 end
+
+
